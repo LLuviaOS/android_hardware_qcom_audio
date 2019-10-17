@@ -20,7 +20,9 @@ LOCAL_SRC_FILES:= \
 	offload_visualizer.c
 
 LOCAL_CFLAGS+= -O2 -fvisibility=hidden
-LOCAL_CFLAGS+= -Wno-error
+LOCAL_CFLAGS+= \
+	-Wno-error \
+	-Wno-missing-declarations
 
 LOCAL_HEADER_LIBRARIES := \
 	libsystem_headers
